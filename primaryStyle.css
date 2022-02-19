@@ -2,18 +2,18 @@ html
 {
     font-family: monospace;
     color: white;
-    font-size: 1.25em;
+    font-size: 1.75vh;
 }
 
 header
 {
-    padding-bottom: 1em;
+    padding-bottom: 1vh;
 }
 
 body
 {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 5vh;
+    padding-right: 5vh;
     padding-top: 1em;
 
     background-color: rgb(37, 43, 68)   /* rgb(30, 30, 30) */
@@ -21,7 +21,7 @@ body
 
 h1
 {
-    font-size: 3em;
+    font-size: 5vh;
 }
 
 a
