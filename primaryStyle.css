@@ -1,0 +1,73 @@
+body
+{
+    font-family: monospace;
+    color: white;
+
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 1em;
+
+    background-color: rgb(30, 30, 30)
+}
+
+a:link
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: grey;
+    text-decoration: none;
+}
+
+hr
+{
+    border-top: 1px dashed white;
+    border-bottom: 0px;
+}
+
+.blogDiv
+{
+    border-left: 2px solid grey;
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.blogDate
+{
+    color: grey;
+    font-style: italic;
+    font-size: small;
+}
+
+.blogTag
+{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    font-size: small;
+    
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+footer
+{
+    color: grey;
+    font-size: small;
+}
