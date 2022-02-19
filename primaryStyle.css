@@ -2,11 +2,12 @@ html
 {
     font-family: monospace;
     color: white;
+    font-size: 1.25em;
 }
 
 header
 {
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 
 body
@@ -15,32 +16,16 @@ body
     padding-right: 5em;
     padding-top: 1em;
 
-    background-color: rgb(30, 30, 30)
+    background-color: rgb(37, 43, 68)   /* rgb(30, 30, 30) */
 }
 
 h1
 {
-    font-size: 1.25em;
-}
-
-h2
-{
-    font-size: 1.25em;
-}
-
-h3
-{
-    font-size: 1.25em;
-}
-
-p
-{
-    font-size: 1.25em;
+    font-size: 3em;
 }
 
 a
 {
-    font-size: 1.25em;
     color: white;
     text-decoration: none;
 }
@@ -68,16 +53,14 @@ hr
 {
     color: grey;
     font-style: italic;
-    font-size: 0.75em;
 }
 
 .blogTag
 {
     color: black;
-    font-size: 0.75em;
 
     display: inline-block;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 0.5em;
     
     padding-left: 0.5em;
@@ -87,5 +70,4 @@ hr
 footer
 {
     color: grey;
-    font-size: 0.75em;
 }
