@@ -2,26 +2,26 @@ html
 {
     font-family: monospace;
     color: white;
-    font-size: 1.75vh;
+    font-size: 1.125em;
 }
 
 header
 {
-    padding-bottom: 1vh;
+    padding-bottom: 1em;
 }
 
 body
 {
-    padding-left: 5vh;
-    padding-right: 5vh;
-    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.25em;
 
     background-color: rgb(37, 43, 68)   /* rgb(30, 30, 30) */
 }
 
 h1
 {
-    font-size: 5vh;
+    font-size: 2.5em;
 }
 
 a
@@ -61,7 +61,7 @@ hr
 
     display: inline-block;
     border: 2px solid black;
-    border-radius: 0.5em;
+    border-radius: 0.75em;
     
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -70,4 +70,5 @@ hr
 footer
 {
     color: grey;
+    font-size: 0.75em;
 }
