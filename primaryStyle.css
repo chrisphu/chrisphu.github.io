@@ -8,7 +8,7 @@ html
 {
     font-family: PlayfairDisplay;
     color: white;
-    font-size: 1.25em;
+    font-size: 1.125em;
 }
 
 header
@@ -22,7 +22,7 @@ body
     padding-right: 2em;
     padding-top: 0.25em;
 
-    width: clamp(16em, 82.5%, 40em);
+    width: clamp(17em, 80%, 40em);
 
     margin-left:auto;
     margin-right:auto;
