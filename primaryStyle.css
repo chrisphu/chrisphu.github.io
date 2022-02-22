@@ -1,8 +1,14 @@
+@font-face
+{
+    font-family: PlayfairDisplay;
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+
 html
 {
-    font-family: monospace;
+    font-family: PlayfairDisplay;
     color: white;
-    font-size: 1.125em;
+    font-size: 1.25em;
 }
 
 header
@@ -16,13 +22,13 @@ body
     padding-right: 2em;
     padding-top: 0.25em;
 
-    width: clamp(22.5em, 82.5%, 50em);
+    width: clamp(16em, 82.5%, 40em);
 
     margin-left:auto;
     margin-right:auto;
     margin-top: 0em;
 
-    background-color: rgb(37, 43, 68)   /* rgb(30, 30, 30) */
+    background-color: rgb(37, 43, 68)   /* rgb(37, 43, 68) */
 }
 
 h1
@@ -67,10 +73,11 @@ hr
 
     display: inline-block;
     border: 2px solid black;
-    border-radius: 0.75em;
-    
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    border-radius: 0.6em;
+
+    padding-left: 0.375em;
+    padding-right: 0.375em;
+    padding-bottom: 0.1em;
 }
 
 .blogTag.website
