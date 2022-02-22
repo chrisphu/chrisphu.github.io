@@ -16,6 +16,12 @@ body
     padding-right: 2em;
     padding-top: 0.25em;
 
+    width: clamp(22.5em,82.5%,60em);
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0em;
+
     background-color: rgb(37, 43, 68)   /* rgb(30, 30, 30) */
 }
 
