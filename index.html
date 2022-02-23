@@ -71,11 +71,11 @@
             </p>
 
             <p>
-                This will be a small town life RPG where the player is a mayor of a new fledgling town. The bulk of the gameplay will be some form of walking and talking (hence the <em>incredibly</em> clever working title) with other activities interspersed such as farming and combat. The player will arrive at the new town to find that it currently only features a town square and a town hall but not much more. As the player fixes up the town with the material they find, new characters will begin moving into the town.
+                This will be a small town life RPG where the player is a mayor of a new fledgling town. The bulk of the gameplay will be some form of walking and talking (hence the <em>incredibly</em> clever working title) with other activities interspersed such as farming and combat. The player will arrive at the new town to find that it currently only features a town square and a town hall and not much more. As the player fixes up the town with the material they find, new characters will begin moving into the town.
             </p>
 
             <p>
-                Now, first and foremost, this not the most original idea in the world. It also has quite the scope for me to accomplish. But that's okay! In the past I had the tendency to shy away from working on game ideas I really liked. Planning a fun game would always be peppered with frequent thoughts of self-doubt such as "<em>nobody would buy this game when a much better version already exists on the market</em>", "<em>it will take me literal years to accomplish anything on this scale</em>", etc. This is then further cemented by common online opinion about what sort of game an indie developer should work on: small, easy to execute, quick turnaround. The reason I am diverging from this common voice (and perhaps common sense) is because being a game developer is not my primary occupation. As a personal project, it makes sense for me to work on an idea I really like because I am not bound by the need for it to generate revenue. This does not negate the difficulties of developing a larger scale game, but it does afford me the luxury of choosing a game idea I love even if it is less practical for a one-person-team to execute.
+                Now, first and foremost, this is not the most original idea in the world. It also has quite the scope for me to accomplish. But that's okay! In the past I had the tendency to shy away from working on game ideas I really liked. Planning a fun game would always be peppered with frequent thoughts of self-doubt such as "<em>nobody would buy this game when a much better version already exists on the market</em>", "<em>it will take me literal years to accomplish anything on this scale</em>", etc. This is then further cemented by common online opinion about what sort of game an indie developer should work on: small, easy to execute, quick turnaround. The reason I am diverging from this common voice (and perhaps common sense) is because being a game developer is not my primary occupation. As a personal project, it makes sense for me to work on an idea I really like because I am not bound by the need for it to generate revenue. This does not negate the difficulties of developing a larger scale game, but it does afford me the luxury of choosing a game idea I love even if it is less practical for a one-person-team to execute.
             </p>
 
             <h4>
@@ -88,7 +88,7 @@
             </div>
 
             <p>
-                So far I have established a basic camera, movement, conversing, and inventory UI. The game is 2D but is created to provide the illusion of a third dimension. So despite the characters being simple 2D sprites, they will be treated as only being grounded to the world by their feet.</p>
+                So far I have established a basic camera, movement, conversing, and an inventory UI. The game is 2D but is created to provide the illusion of a third dimension. So despite the characters being simple 2D sprites, they will be treated as only being grounded to the world by their feet.</p>
 
             <p>
                 The first step in selling this illusion is setting up the camera such that it appears to be viewing everything 45° to the ground. It is necessary for objects with a greater Y-axis position to be displayed as being behind objects with a lower Y-axis position. This is easily implemented by going to Edit → Project Settings → Graphics → Transparency Sort Axis = (0, 1, 0). This allows Unity to organize the order in which sprites are rendered (within the same layer) by their Y-axis position. Note that it may be worthwhile to set the Z-axis value here to -1 in order to implement 'vertical' positioning in the 2D game, but that is something I will revisit down the road.
@@ -99,7 +99,7 @@
             </p>
 
             <p>
-                The conversation tree system was the greatest challenge so far. I ended up with using JSON files to store character conversations. Each conversation JSON file has a single array named 'nodes' and each element in this array is an object (what I call a node). Each node then has a 'prompt' string value and a 'nodelinks' int value. Each node's prompt corresponds to what a character says when the node is called, and each node's nodelink continues to conversation by directing it to the next node (where the int value is the element in the 'nodes' array). For example:
+                The conversation tree system was the greatest challenge so far. I ended up using JSON files to store character conversations. Each conversation JSON file has a single array named 'nodes' and each element in this array is an object (each object being what I call a node). Each node then has a 'prompt' string value and a 'nodelinks' int value. Each node's prompt corresponds to what a character says when the node is called, and each node's nodelink continues the conversation by directing it to the next node (where the int value is the element/object in the 'nodes' array). For example:
             </p>
 
             <pre class="codeBlock">
