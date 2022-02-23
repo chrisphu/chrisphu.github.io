@@ -133,9 +133,10 @@ footer
 .youtubeContainer
 {
     position: relative;
-    width: 94%;
+    width: 90%;
     height: 0em;
-    padding-bottom: calc(340 / 560 * 94%);
+    padding-bottom: calc(340 / 560 * 90%);
+    margin-left: 5%;
 }
 
 .youtubeFrame
@@ -157,6 +158,4 @@ footer
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-radius: 1em;
-
-    margin-right: 6%;
 }
