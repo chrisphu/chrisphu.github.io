@@ -2,6 +2,24 @@
 {
     font-family: PlayfairDisplay;
     src: url("fonts/PlayfairDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: PlayfairDisplayItalic;
+    src: url("fonts/PlayfairDisplay-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: PlayfairDisplayBold;
+    src: url("fonts/PlayfairDisplay-Bold.ttf");
+    font-weight: normal;
+    font-style: bold;
 }
 
 html
@@ -9,6 +27,17 @@ html
     font-family: PlayfairDisplay;
     color: white;
     font-size: 1.125em;
+    line-height: 1.8em;
+}
+
+em
+{
+    font-family: PlayfairDisplayItalic;
+}
+
+strong
+{
+    font-family: PlayfairDisplayBold;
 }
 
 header
@@ -18,11 +47,9 @@ header
 
 body
 {
-    padding-left: 2em;
-    padding-right: 2em;
     padding-top: 0.25em;
 
-    width: clamp(17em, 80%, 40em);
+    width: clamp(18em, 80%, 40em);
 
     margin-left:auto;
     margin-right:auto;
@@ -73,11 +100,10 @@ hr
 
     display: inline-block;
     border: 2px solid black;
-    border-radius: 0.6em;
+    border-radius: 1em;
 
-    padding-left: 0.375em;
-    padding-right: 0.375em;
-    padding-bottom: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .blogTag.website
@@ -94,8 +120,8 @@ hr
 
 .blogTag.gamedev
 {
-    background-color: rgb(107, 26, 212);
-    color: white;
+    background-color: rgb(73, 116, 209);
+    color: black;
 }
 
 footer
@@ -119,4 +145,14 @@ footer
     left: 0em;
     width: 100%;
     height: 100%;
+}
+
+.codeBlock
+{
+    background-color: rgb(21, 26, 43);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 1em;
 }
