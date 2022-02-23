@@ -133,9 +133,9 @@ footer
 .youtubeContainer
 {
     position: relative;
-    width: 100%;
+    width: 94%;
     height: 0em;
-    padding-bottom: calc(340 / 560 * 100%);
+    padding-bottom: calc(340 / 560 * 94%);
 }
 
 .youtubeFrame
@@ -150,9 +150,13 @@ footer
 .codeBlock
 {
     background-color: rgb(21, 26, 43);
+    white-space: pre-wrap;
+
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-radius: 1em;
+
+    margin-right: 6%;
 }
