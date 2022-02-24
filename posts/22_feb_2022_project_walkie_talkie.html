@@ -17,7 +17,7 @@
         </h1>
 
         <!-- Navigation -->
-        <h3>
+        <h3 class="nav">
             <a href="../index.html">
                 Home
             </a>
@@ -38,14 +38,14 @@
 
     <!-- Body -->
     <body>
-        <a href="../archive.html"><em>&larr; Return</em></a>
-
-        <br>
+        <div class="return">
+            <a href="../archive.html">&larr; Return</a>
+        </div>
 
         <h3>
             <div class="blogTag gamedev">
                 <span>
-                    Game Development
+                    #game_development
                 </span>
             </div>
         </h3>
@@ -79,12 +79,13 @@
                 📌 To More Technical Matters...
             </h4>
 
+            <p>
+                So far I have established a basic camera, movement, conversing, and an inventory UI. The game is 2D but is created to provide the illusion of a third dimension. So despite the characters being simple 2D sprites, they will be treated as only being grounded to the world by their feet.
+            </p>
+
             <div class="youtubeContainer">
                 <iframe src="https://www.youtube.com/embed/GIKn_aWnsuw" frameborder="0em" allowfullscreen class="youtubeFrame"></iframe>
             </div>
-
-            <p>
-                So far I have established a basic camera, movement, conversing, and an inventory UI. The game is 2D but is created to provide the illusion of a third dimension. So despite the characters being simple 2D sprites, they will be treated as only being grounded to the world by their feet.</p>
 
             <p>
                 The first step in selling this illusion is setting up the camera such that it appears to be viewing everything 45° to the ground. It is necessary for objects with a greater Y-axis position to be displayed as being behind objects with a lower Y-axis position. This is easily implemented by going to Edit → Project Settings → Graphics → Transparency Sort Axis = (0, 1, 0). This allows Unity to organize the order in which sprites are rendered (within the same layer) by their Y-axis position. Note that it may be worthwhile to set the Z-axis value here to -1 in order to implement 'vertical' positioning in the 2D game, but that is something I will revisit down the road.
@@ -103,11 +104,11 @@
     "nodes":
     [
         {
-            "Prompt":"Hello, world!",
-            "NodeLinks":1
+            "Prompt" : "Hello, world!",
+            "NodeLinks" : 1
         },
         {
-            "Prompt":"Welcome to the game."
+            "Prompt" : "Welcome to the game."
         }
     ]
 }</pre>
@@ -124,7 +125,7 @@
             </h4>
 
             <p>
-                I believe this concludes this first devlog! As I continue developing the game, I expect lots of things to change, whether that be the story or the art ("<em>No, don't do it, the characters are so cute</em>", someone said somewhere maybe). Next up on the chopping block are making the inventory system functional and prototyping object placement. The latter should be fun as I do not plan making the game particularly grid based.
+                I believe this concludes this first devlog! As I continue developing the game, I expect lots of things to change, whether that be the story or the art ("<em>No, don't do it, the characters are so cute</em>", someone said somewhere maybe). Next up on the chopping block are making the inventory system functional and prototyping object placement. The latter should be fun as I do not plan on making the game particularly grid based.
             </p>
         </div>
     </body>
