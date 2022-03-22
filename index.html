@@ -17,6 +17,7 @@
         </h1>
 
         <!-- Navigation -->
+<<<<<<< HEAD
         <div class="navBlock">
             <h2 class="nav">
                 <a href="index.html" class="navElement">
@@ -36,13 +37,48 @@
                 </a>
             </h2>
         </div>
+=======
+        <h3>
+            <a href="index.html">
+                Home
+            </a>
+
+            ·
+
+            <a href="archive.html">
+                Archive
+            </a>
+
+            ·
+
+            <a href="about_me.html">
+                About me
+            </a>
+        </h3>
+>>>>>>> parent of 08c73c8 (Updated site theme)
     </header>
 
     <!-- Body -->
     <body>
+<<<<<<< HEAD
         <h2>
             🟡 Featured Post
         </h2>
+=======
+        <h3>
+            <div class="blogTag" style="background-color: yellow;">
+                <span style="color: black;">
+                    Latest post!
+                </span>
+            </div>
+
+            <div class="blogTag gamedev">
+                <span">
+                    Game Development
+                </span>
+            </div>
+        </h3>
+>>>>>>> parent of 08c73c8 (Updated site theme)
 
         <!-- Latest blog post -->
         <div class="blogDiv">
@@ -77,14 +113,13 @@
                 🟡 To More Technical Matters...
             </h4>
 
-            <p>
-                So far I have established a basic camera, movement, conversing, and an inventory UI. The game is 2D but is created to provide the illusion of a third dimension. So despite the characters being simple 2D sprites, they will be treated as only being grounded to the world by their feet.
-            </p>
-
             <!-- https://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube-iframe-embed -->
             <div class="youtubeContainer">
                 <iframe src="https://www.youtube.com/embed/GIKn_aWnsuw" frameborder="0em" allowfullscreen class="youtubeFrame"></iframe>
             </div>
+
+            <p>
+                So far I have established a basic camera, movement, conversing, and an inventory UI. The game is 2D but is created to provide the illusion of a third dimension. So despite the characters being simple 2D sprites, they will be treated as only being grounded to the world by their feet.</p>
 
             <p>
                 The first step in selling this illusion is setting up the camera such that it appears to be viewing everything 45° to the ground. It is necessary for objects with a greater Y-axis position to be displayed as being behind objects with a lower Y-axis position. This is easily implemented by going to Edit → Project Settings → Graphics → Transparency Sort Axis = (0, 1, 0). This allows Unity to organize the order in which sprites are rendered (within the same layer) by their Y-axis position. Note that it may be worthwhile to set the Z-axis value here to -1 in order to implement 'vertical' positioning in the 2D game, but that is something I will revisit down the road.
@@ -103,11 +138,11 @@
     "nodes":
     [
         {
-            "Prompt" : "Hello, world!",
-            "NodeLinks" : 1
+            "Prompt":"Hello, world!",
+            "NodeLinks":1
         },
         {
-            "Prompt" : "Welcome to the game."
+            "Prompt":"Welcome to the game."
         }
     ]
 }</pre>
@@ -124,7 +159,7 @@
             </h4>
 
             <p>
-                I believe this concludes this first devlog! As I continue developing the game, I expect lots of things to change, whether that be the story or the art ("<em>No, don't do it, the characters are so cute</em>", someone said somewhere maybe). Next up on the chopping block are making the inventory system functional and prototyping object placement. The latter should be fun as I do not plan on making the game particularly grid based.
+                I believe this concludes this first devlog! As I continue developing the game, I expect lots of things to change, whether that be the story or the art ("<em>No, don't do it, the characters are so cute</em>", someone said somewhere maybe). Next up on the chopping block are making the inventory system functional and prototyping object placement. The latter should be fun as I do not plan making the game particularly grid based.
             </p>
         </div>
     </body>
