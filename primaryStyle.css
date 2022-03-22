@@ -1,0 +1,200 @@
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+::selection
+{
+    color: black;
+    background-color: yellow;
+}
+
+@font-face
+{
+    font-family: Poppins;
+    src: url("fonts/Poppins-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: PoppinsItalic;
+    src: url("fonts/Poppins-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: PoppinsBold;
+    src: url("fonts/Poppins-Bold.ttf");
+    font-weight: normal;
+    font-style: bold;
+}
+
+html
+{
+    font-family: Poppins;
+    color: black;
+    font-size: 1.125em;
+    line-height: 1.8em;
+}
+
+em
+{
+    font-family: PoppinsItalic;
+}
+
+strong
+{
+    font-family: PoppinsBold;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: rgb(200, 200, 200);
+}
+
+.websiteTitle
+{
+    color: black;
+}
+
+.navElement
+{
+    color: white;
+}
+
+.navBlock
+{
+    display: inline-block;
+    background-color: rgb(25, 25, 25);
+    border-radius: 0.5em;
+
+    margin-bottom: 0.9em;
+}
+
+.nav
+{
+    color: white;
+    margin: 0em;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+body
+{
+    padding-top: 0.25em;
+
+    width: clamp(18em, 80%, 40em);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+
+    background-color: white;
+}
+
+h1
+{
+    font-size: 2.5em;
+}
+
+h2
+{
+    font-size: 1.5em;
+}
+
+h3
+{
+    font-size: 1.25em;
+}
+
+h4
+{
+    font-size: 1.125em;
+}
+
+.blogDiv
+{
+    border-left: 2px solid rgb(200, 200, 200);
+    padding-left: 1em;
+}
+
+.blogTag
+{
+    color: rgb(200, 200, 200);
+    line-height: 0em;
+    padding-bottom: 0.9em;
+}
+
+.aboutMeTag
+{
+    color: white;
+    background-color: rgb(25, 25, 25);
+    display: inline-block;
+    padding: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 0.35em;
+}
+
+.aboutMeTag2
+{
+    color: black;
+    background-color: rgb(200, 200, 200);
+    display: inline-block;
+    padding: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 0.35em;
+}
+
+footer
+{
+    color: rgb(200, 200, 200);
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.youtubeContainer
+{
+    position: relative;
+    width: 90%;
+    height: 0em;
+    padding-bottom: calc(340 / 560 * 90%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtubeFrame
+{
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    width: 100%;
+    height: 100%;
+}
+
+.codeBlock
+{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    white-space: pre-wrap;
+    border-radius: 1em;
+
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
