@@ -31,9 +31,11 @@
 /* BASE HTML ELEMENTS */
 
 html {
+    --project-picture-width: max(calc(25% - 1.5em), 12em);
+
     font-family: Poppins;
     color: black;
-    font-size: 1.125em;
+    font-size: 1em;
     line-height: 1.8em;
     background-color: lightgrey;
 }
@@ -51,7 +53,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.125em;
+    font-size: 1em; /* 1.125em; */
 }
 
 hr {
@@ -71,12 +73,19 @@ strong {
 }
 
 a {
+    display: inline-block;
     color: black;
     text-decoration: none;
+    transition: transform 0.1s ease-out, color 0.1s ease-out;
 }
 
 a:active {
     color: rgb(200, 200, 200);
+}
+
+a:hover {
+    transform: translateY(-3px);
+    color: rgb(100, 100, 100);
 }
 
 /* MAIN BODY */
@@ -101,30 +110,54 @@ a:active {
 
 /* TITLE */
 
-.websiteTitle
-{
+.websiteTitle {
     color: black;
+}
+
+@keyframes accentAnimation {
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+
+.websiteTitleAccent {
+    display: inline-block;
+    text-shadow: 0.05em 0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, -0.05em -0.05em black;
+    animation-name: accentAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.noselect {
+    user-select: none;
 }
 
 /* PROJECT ENTRY */
 
-.projectDiv {
+.projectContainer {
     display: flex;
-    padding: 1em;
+    padding: 0.75em;
     border: 1px solid lightgrey;
     border-radius: 0.25em;
+    margin-bottom: 0.75em;
+}
+
+.projectPictureContainer {
+    width: var(--project-picture-width);
 }
 
 .projectPicture {
-    margin-right: 1em;
+    padding-bottom: 100%;
     background-color: black;
-    --project-picture-width: min(15vw, 6em);
-    width: var(--project-picture-width);
-    height: var(--project-picture-width);
+}
+
+.projectDescContainer {
+    margin-left: 0.75em;
 }
 
 .projectDesc {
-    
+    margin-bottom: -0.5em;
 }
 
 .projectTitle {
@@ -134,12 +167,24 @@ a:active {
 
 .projectType {
     display: inline-block;
-    background-color: dodgerblue;
-    color: white;
     padding-left: 0.35em;
     padding-right: 0.35em;
     border-radius: 0.25em;
     margin-right: 0.25em;
+}
+
+/* https://htmlcolorcodes.com/color-chart/ */
+
+.projectType.design {
+    background-color: #3498DB ;
+    text-shadow: -0.1em 0.05em #1B4F72;
+    color: white;
+}
+
+.projectType.budget {
+    background-color: #2ECC71;
+    text-shadow: -0.1em 0.05em #186A3B;
+    color: white;
 }
 
 /* FOOTER */
