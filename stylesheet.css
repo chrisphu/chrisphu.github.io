@@ -31,7 +31,7 @@
 /* BASE HTML ELEMENTS */
 
 html {
-    --project-picture-width: max(calc(25% - 1.5em), 12em);
+    --project-picture-width: max(calc(25% - 1.5em), 4em);
 
     font-family: Poppins;
     color: black;
@@ -46,6 +46,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    margin-bottom: -0.25em;
 }
 
 h3 {
@@ -56,12 +57,21 @@ h4 {
     font-size: 1em; /* 1.125em; */
 }
 
+p {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
 hr {
     height: 0em;
     border: 0em;
     border-top: 1px solid lightgrey;
     margin-top: 1.25em;
     margin-bottom: 1.25em;
+}
+
+hr.dashed {
+    border-top: 1px dashed lightgrey;
 }
 
 em {
@@ -75,7 +85,6 @@ strong {
 a {
     display: inline-block;
     color: black;
-    text-decoration: none;
     transition: transform 0.1s ease-out, color 0.1s ease-out;
 }
 
@@ -84,8 +93,17 @@ a:active {
 }
 
 a:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     color: rgb(100, 100, 100);
+}
+
+a.nodecor {
+    text-decoration: none;
+}
+
+.halfbr {
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
 }
 
 /* MAIN BODY */
@@ -153,6 +171,7 @@ a:hover {
 }
 
 .projectDescContainer {
+    width: calc(100% - var(--project-picture-width));
     margin-left: 0.75em;
 }
 
@@ -230,4 +249,22 @@ https://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube
     padding-right: 1.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+/* ABOUT */
+
+.profilePictureContainer {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    display: flex;
+    justify-content: center;
+}
+
+.profilePicture {
+    width: 10em;
+    height: 10em;
+    background-color: rgb(240, 240, 240);
+    background-image: url("images/profile_picture_transparent.png");
+    background-size: 10em 10em;
+    border-radius: 5em;
 }
