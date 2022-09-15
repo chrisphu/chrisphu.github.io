@@ -9,21 +9,21 @@
 
 @font-face {
     font-family: Poppins;
-    src: url("fonts/Poppins-Regular.ttf");
+    src: url("/fonts/Poppins-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: PoppinsItalic;
-    src: url("fonts/Poppins-Italic.ttf");
+    src: url("/fonts/Poppins-Italic.ttf");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: PoppinsBold;
-    src: url("fonts/Poppins-Bold.ttf");
+    src: url("/fonts/Poppins-Bold.ttf");
     font-weight: normal;
     font-style: bold;
 }
@@ -168,6 +168,8 @@ a.nodecor {
 .projectPicture {
     padding-bottom: 100%;
     background-color: black;
+    outline: 0.05em solid black;
+    border-radius: 0.25em;
 }
 
 .projectDescContainer {
@@ -264,7 +266,7 @@ https://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube
     width: 10em;
     height: 10em;
     background-color: rgb(240, 240, 240);
-    background-image: url("images/profile_picture_transparent.png");
+    background-image: url("/images/profile_picture_transparent.png");
     background-size: 10em 10em;
     border-radius: 5em;
 }
