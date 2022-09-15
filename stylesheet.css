@@ -28,6 +28,29 @@
     font-style: bold;
 }
 
+/* https://developer.chrome.com/blog/colrv1-fonts/ */
+
+/*
+@font-face {
+    font-family: Nabla;
+    src: url("/fonts/Nabla-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-palette-values --nabla-palette-0 {
+    font-family: Nabla;
+    base-palette: 0;
+}
+
+@font-face {
+    font-family: NotoColorEmoji;
+    src: url("/fonts/NotoColorEmoji-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
 /* BASE HTML ELEMENTS */
 
 html {
@@ -132,6 +155,17 @@ a.nodecor {
     color: black;
 }
 
+/*
+.websiteTitle {
+    font-family: Nabla;
+    font-palette: --nabla-palette-0;
+    text-shadow: 0.025em 0.025em black,
+        -0.025em 0.025em black,
+        0.025em -0.025em black,
+        -0.025em -0.025em black;
+}
+*/
+
 @keyframes accentAnimation {
     0% {transform: rotate(10deg);}
     50% {transform: rotate(-10deg);}
@@ -140,7 +174,10 @@ a.nodecor {
 
 .websiteTitleAccent {
     display: inline-block;
-    text-shadow: 0.05em 0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, -0.05em -0.05em black;
+    text-shadow: 0.05em 0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        -0.05em -0.05em black;
     animation-name: accentAnimation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -165,11 +202,21 @@ a.nodecor {
     width: var(--project-picture-width);
 }
 
+.projectPictureContainer:hover {
+    transform: translateY(0px);
+}
+
 .projectPicture {
     padding-bottom: 100%;
-    background-color: black;
-    outline: 0.05em solid black;
+    background-color: rgb(240, 240, 240);
+    background-size: 100% 100%;
+    background-position: center;
     border-radius: 0.25em;
+    transition: background-size 0.25s ease-in-out;
+}
+
+.projectPicture:hover {
+    background-size: 110% 110%;
 }
 
 .projectDescContainer {
@@ -194,18 +241,29 @@ a.nodecor {
     margin-right: 0.25em;
 }
 
-/* https://htmlcolorcodes.com/color-chart/ */
+/*
+Flat Design Color Chart
+https://htmlcolorcodes.com/color-chart/
+*/
 
 .projectType.design {
-    background-color: #3498DB ;
-    text-shadow: -0.1em 0.05em #1B4F72;
+    background-color: #03A9F4;
+    text-shadow: -0.1em 0.05em #01579B;
     color: white;
 }
 
-.projectType.budget {
-    background-color: #2ECC71;
-    text-shadow: -0.1em 0.05em #186A3B;
+.projectType.design::before {
+    content: "design";
+}
+
+.projectType.code {
+    background-color: #E91E63;
+    text-shadow: -0.1em 0.05em #880E4F;
     color: white;
+}
+
+.projectType.code::before {
+    content: "code";
 }
 
 /* FOOTER */
