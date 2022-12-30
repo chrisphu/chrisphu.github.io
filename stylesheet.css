@@ -4,7 +4,7 @@
 
 ::selection {
     color: black;
-    background-color: yellow;
+    background-color: #AED6F1;
 }
 
 @font-face {
@@ -194,8 +194,25 @@ a.nodecor {
     display: flex;
     padding: 0.75em;
     border: 1px solid lightgrey;
+    border-left: 3px solid;
     border-radius: 0.25em;
     margin-bottom: 0.75em;
+}
+
+.projectContainer.design {
+    border-left-color: #03A9F4;
+}
+
+.projectContainer.code {
+    border-left-color: #E91E63;
+}
+
+.projectContainer.language {
+    border-left-color: #8BC34A;
+}
+
+.projectContainer.misc {
+    border-left-color: #78909C;
 }
 
 .projectPictureContainer {
@@ -224,7 +241,7 @@ a.nodecor {
     margin-left: 0.75em;
 }
 
-.projectDesc {
+.projectDescBottom {
     margin-bottom: -0.5em;
 }
 
@@ -264,6 +281,26 @@ https://htmlcolorcodes.com/color-chart/
 
 .projectType.code::before {
     content: "code";
+}
+
+.projectType.language {
+    background-color: #8BC34A;
+    text-shadow: -0.1em 0.05em #33691E;
+    color: white;
+}
+
+.projectType.language::before {
+    content: "language";
+}
+
+.projectType.misc {
+    background-color: #78909C;
+    text-shadow: -0.1em 0.05em #263238;
+    color: white;
+}
+
+.projectType.misc::before {
+    content: "misc";
 }
 
 /* FOOTER */
