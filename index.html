@@ -1,109 +1,50 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <div class="centerContainer">
-        <div class="centerDiv">
-            <div class="mainDiv">
-                <!-- STYLESHEET -->
-                <header>
-                    <title>Chris Phu</title>
-                    <link rel="stylesheet" href="/stylesheet.css">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                </header>
+    <div id="mainContentContainer">
+        <div id="mainContent">
+            <!-- STYLESHEET -->
+            <head>
+                <title>Chris Phu</title>
+                <link rel="stylesheet" href="/stylesheet.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+            </head>
 
-                <!-- HEADER -->
-                <header>
-                    <!-- TITLE -->
-                    <h1>
-                        <a href="/index.html" class="websiteTitle nodecor">
-                            Chris Phu
-                        </a>
+            <!-- TITLE -->
+            <h1 id="websiteTitle"><a href="/index.html">Chris Phu <span id="websiteTitleAccent">🤔</span></a></h1>
 
-                        <div class="websiteTitleAccent noselect">🤔</div>
-                    </h1>
-                </header>
+            <!-- NAV -->
+            <nav>
+                <a href="/index.html">Home</a> <span class="slashDelimiter">&ensp;/&ensp;</span>
+                <a href="/pages/misc/about-me/index.html">About me</a>
+            </nav>
 
-                <!-- NAV -->
-                <nav>
-                    <a href="/index.html" class="nodecor">
-                        Projects
-                    </a>
+            <hr>
 
-                    <span class="noselect">&ensp;/&ensp;</span>
+            <!-- HEADER -->
+            <header>
+                <h1>Home</h1>
+                <p class="subtle">Last updated 2023 May 26</p>
+            </header>
 
-                    <a href="/about.html" class="nodecor">
-                        About
-                    </a>
+            <!-- BODY -->
+            <body>
+                <p>Welcome to my website! I will be documenting and writing about my projects and interests from time to time on here to share. This website itself is actually a project as it is just bare-bones HTML and CSS hosted on <a href="https://github.com/chrisphu/chrisphu.github.io">GitHub Pages</a>.</p>
+                <p>I designed this website to resemble my <a href="https://obsidian.md/">Obsidian</a> vault which uses the <a href="https://github.com/sainnhe/everforest">Everforest</a> color scheme.</p>
+                <h2>Design projects</h2>
+                <ul>
+                    <li><a href="/pages/projects/modern-chess-pieces/index.html">Modern chess pieces</a></li>
+                </ul>
+                <h2>Coding projects</h2>
+                <ul>
+                    <li><a href="https://github.com/chrisphu/code-snippets">Code snippets (GitHub)</a></li>
+                </ul>
+            </body>
 
-                    <span class="noselect">&ensp;/&ensp;</span>
-
-                    <a href="/resources/chris_phu_resume.pdf" class="nodecor">
-                        Resume
-                    </a>
-                </nav>
-
-                <hr>
-
-                <!-- BODY -->
-                <body>
-                    <h2>
-                        Projects
-                    </h2>
-
-                    <br>
-
-                    <!-- PROJECT #1 -->
-                    <div class="projectContainer">
-                        <a href="https://www.printables.com/model/276528-modern-chess-pieces" target="_blank" rel="noopener noreferrer" class="projectPictureContainer">
-                            <div class="projectPicture" style="background-image: url('/images/modern_chess_pieces_thumbnail.png');"></div>
-                        </a>
-
-                        <div class="projectDescContainer">
-                            <h3 class="projectTitle">
-                                <a href="https://www.printables.com/model/276528-modern-chess-pieces" target="_blank" rel="noopener noreferrer" class="nodecor">
-                                    Modern chess pieces
-                                </a>
-
-                                <div class="projectType design"></div>
-                            </h3>
-                            
-                            <p class="projectDescBottom">
-                                An original sharp low poly chess piece set design. .stl files are hosted on <a href="https://www.printables.com/model/276528-modern-chess-pieces" target="_blank" rel="noopener noreferrer">Printables</a>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT #2 -->
-                    <div class="projectContainer">
-                        <a href="https://github.com/chrisphu/code-snippets" target="_blank" rel="noopener noreferrer" class="projectPictureContainer">
-                            <div class="projectPicture" style="background-image: url('/images/github_badge.png');"></div>
-                        </a>
-
-                        <div class="projectDescContainer">
-                            <h3 class="projectTitle">
-                                <a href="https://github.com/chrisphu/code-snippets" target="_blank" rel="noopener noreferrer" class="nodecor">
-                                    Code snippets on GitHub
-                                </a>
-
-                                <div class="projectType code"></div>
-                            </h3>
-                            
-                            <p class="projectDescBottom">
-                                Short code snippets (usually of C#) I reuse. Code and documentation are hosted on <a href="https://github.com/chrisphu/code-snippets" target="_blank" rel="noopener noreferrer">GitHub</a>.
-                            </p>
-                        </div>
-                    </div>
-                </body>
-
-                <!-- FOOTER -->
-                <footer>
-                    <p>
-                        <em>
-                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> Chris Phu. All Rights Reserved.
-                        </em>
-                    </p>
-                </footer>
-            </div>
+            <!-- FOOTER -->
+            <footer>
+                <p class="subtle">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Chris Phu. All Rights Reserved.</p>
+            </footer>
         </div>
     </div>
 </html>
