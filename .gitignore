@@ -1,3 +1,6 @@
 .bzvol
 bootTel.dat
 $RECYCLE.BIN
+.htaccess
+run-http-server.bat
+localhost.url
