@@ -3,7 +3,7 @@
 <html lang="en">
     <div id="mainContentContainer">
         <div id="mainContent">
-            <!-- STYLESHEET -->
+            <!-- HEAD -->
             <head>
                 <title>Chris Phu</title>
                 <link rel="stylesheet" href="/stylesheet.css">
@@ -11,41 +11,37 @@
                 <meta charset="UTF-8">
             </head>
 
-            <!-- TITLE -->
-            <h1 id="websiteTitle"><a href="/">Chris Phu <span id="websiteTitleAccent">🤔</span></a></h1>
-
-            <!-- NAV -->
-            <nav>
-                <a href="/">Home</a> <span class="slashDelimiter">&ensp;/&ensp;</span>
-                <a href="/pages/misc/about-me">About me</a>
-            </nav>
-
-            <hr>
-
             <!-- HEADER -->
-            <header>
-                <h1>Home</h1>
-                <p class="subtle">Last updated 2023 May 26</p>
-            </header>
+            <div w3-include-HTML="/elements/header.html"></div>
 
-            <!-- BODY -->
-            <body>
-                <p>Welcome to my website! I will be documenting and writing about my projects and interests from time to time on here to share. This website itself is actually a project as it is just bare-bones HTML and CSS hosted on <a href="https://github.com/chrisphu/chrisphu.github.io">GitHub Pages</a>.</p>
-                <p>I designed this website to resemble my <a href="https://obsidian.md/">Obsidian</a> vault which uses the <a href="https://github.com/sainnhe/everforest">Everforest</a> color scheme.</p>
-                <h2>Design projects</h2>
-                <ul>
-                    <li><a href="/pages/projects/modern-chess-pieces">Modern chess pieces</a></li>
-                </ul>
-                <h2>Coding projects</h2>
-                <ul>
-                    <li><a href="https://github.com/chrisphu/code-snippets">Code snippets (GitHub)</a></li>
-                </ul>
-            </body>
+            <!-- ARTICLE -->
+            <article>
+                <!-- ARTICLE HEADER -->
+                <header>
+                    <h1>Home</h1>
+                    <p class="subtle">Last updated 2023 May 26</p>
+                </header>
+
+                <!-- ARTICLE BODY -->
+                <body>
+                    <p>Welcome to my website! I will be documenting and writing about my projects and interests from time to time on here to share. This website itself is actually a project as it is just bare-bones HTML and CSS hosted on <a href="https://github.com/chrisphu/chrisphu.github.io">GitHub Pages</a>.</p>
+                    <p>I designed this website to resemble my <a href="https://obsidian.md/">Obsidian</a> vault which uses the <a href="https://github.com/sainnhe/everforest">Everforest</a> color scheme.</p>
+                    <h2>Design projects</h2>
+                    <ul>
+                        <li><a href="/pages/projects/modern-chess-pieces">Modern chess pieces</a></li>
+                    </ul>
+                    <h2>Coding projects</h2>
+                    <ul>
+                        <li><a href="https://github.com/chrisphu/code-snippets">Code snippets (GitHub)</a></li>
+                    </ul>
+                </body>
+            </article>
 
             <!-- FOOTER -->
-            <footer>
-                <p class="subtle">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Chris Phu. All Rights Reserved.</p>
-            </footer>
+            <div w3-include-HTML="/elements/footer.html"></div>
+
+            <!-- W3 INCLUDE HTML SCRIPT -->
+            <script src="/w3-include-HTML.js"></script>
         </div>
     </div>
 </html>
