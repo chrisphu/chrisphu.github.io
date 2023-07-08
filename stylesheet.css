@@ -120,6 +120,10 @@ footer {
     margin-top: 3em;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .tab {
     display: inline-block;
     margin-left: 1em;
