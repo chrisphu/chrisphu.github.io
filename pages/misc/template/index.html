@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <div id="mainContentContainer">
-        <div id="mainContent">
-            <!-- HEAD -->
+    <div id="main-content-container">
+        <div id="main-content">
             <head>
                 <title>Chris Phu</title>
                 <link rel="stylesheet" href="/stylesheet.css">
@@ -11,16 +10,14 @@
                 <meta charset="UTF-8">
             </head>
 
-            <!-- HEADER -->
-            <div w3-include-HTML="/elements/header.html"></div>
+            <body>
+                <header w3-include-HTML="/elements/header.html"></header>
+                <nav w3-include-HTML="/elements/nav.html"></nav>
+                <hr>
+                <article w3-include-HTML="./article.html"></article>
+                <footer w3-include-HTML="/elements/footer.html"></footer>
+            </body>
 
-            <!-- ARTICLE -->
-            <div w3-include-HTML="./article.html"></div>
-
-            <!-- FOOTER -->
-            <div w3-include-HTML="/elements/footer.html"></div>
-
-            <!-- W3 INCLUDE HTML SCRIPT -->
             <script src="/w3-include-HTML.js"></script>
         </div>
     </div>
