@@ -156,6 +156,12 @@ footer a { text-decoration: none; }
 
 .no-user-selection { user-select: none; }
 .short-margin-bottom { margin-bottom: 0.5em; }
+.look-at-me { color: #e67e80; }
+
+.fit-width {
+    width: 100%;
+    height: auto;
+}
 
 .article-image-container img {
     /* Display & box model */
