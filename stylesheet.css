@@ -1,5 +1,7 @@
 /**
  * Convention https://github.com/necolas/idiomatic-css
+ *
+ * Everforest medium https://user-images.githubusercontent.com/58662350/214382352-cd7a4f63-e6ef-4575-82c0-a8b72aa37c0c.png
  */
 
 /* CSS reset */
@@ -164,6 +166,45 @@ footer a { text-decoration: none; }
     width: 100%;
     height: auto;
 }
+
+span.label {
+    /* Display & box model */
+    padding: 0.125em 0.375em 0.125em 0.375em;
+
+    /* Text */
+    font-size: 0.85em;
+    font-weight: bold;
+    white-space: nowrap;
+
+    /* Other */
+    border-radius: 0.375em;
+}
+
+span.label.external-link {
+    color: #3d484d;
+    background-color: #232a2e;
+}
+
+span.label.design {
+    color: #7fbbb3;
+    background-color: #3a515d;
+}
+
+span.label.design::before { content: "design"; }
+
+span.label.code {
+    color: #a7c080;
+    background-color: #425047;
+}
+
+span.label.code::before { content: "code"; }
+
+span.label.spoiler {
+    color: #e67e80;
+    background-color: #4c3743;
+}
+
+span.label.spoiler::before { content: "spoiler!"; }
 
 .article-image-container img {
     /* Display & box model */
