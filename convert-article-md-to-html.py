@@ -1,18 +1,20 @@
 import argparse
 import markdown
 from pathlib import Path
-import re
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        prog='convert-article-md-to-html',
         description='Convert article.md to article.html.')
     parser.add_argument(
-        '-p',
-        '--path',
-        nargs=1,
-        required=True,
-        type=Path)
+        'path',
+        action='store',
+        type=Path,
+        help='path to the directory with the .md')
+    parser.add_argument(
+        '-a',
+        '--addclasses',
+        action='store_true',
+        help='whether or not to add predefined classes when converting from .md to .html. False by default (without this option)')
     args = parser.parse_args()
     return vars(args)
 
@@ -43,26 +45,30 @@ def add_classes_to_html(html):
         html_with_classes += '\n' + line
     return html_with_classes
 
+def authorize_write():
+    confirmation = input('Perform write? This is destructive if there is an existing article.html. [y/n]\n')
+    if not confirmation.lower() in ['y', 'ye', 'yes']:
+        raise Exception('User did not authorize write. Action canceled.')
+
 def write_to_html(path, html):
     html_path = path / 'article.html'
     with open(html_path, 'r+') as file:
         file.seek(0)
         file.write(html)
         file.truncate()
+    print('Write completed.')
 
 def main():
     arguments = parse_arguments()
-    path = arguments['path'][0]
+    path = arguments['path']
     check_if_argument_is_a_directory(path)
     md_path = get_md_path(path)
     html = convert_md_to_html(md_path)
-    html_with_classes = add_classes_to_html(html)
-    confirmation = input('Perform write? This is destructive if there is an existing article.html. [y/n]\n')
-    if not confirmation.lower() in ['y', 'ye', 'yes']:
-        print('Action canceled.')
-        return
-    write_to_html(path, html_with_classes)
-    print('Write completed.')
+    add_classes = arguments['addclasses']
+    if add_classes:
+        html = add_classes_to_html(html)
+    authorize_write()
+    write_to_html(path, html)
 
 if __name__ == '__main__':
     main()
