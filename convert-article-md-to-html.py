@@ -45,7 +45,7 @@ def add_classes_to_html(html):
         html_with_classes += '\n' + line
     return html_with_classes
 
-def authorize_write():
+def check_for_write_authorization():
     confirmation = input('Perform write? This is destructive if there is an existing article.html. [y/n]\n')
     if not confirmation.lower() in ['y', 'ye', 'yes']:
         raise Exception('User did not authorize write. Action canceled.')
@@ -67,7 +67,7 @@ def main():
     add_classes = arguments['addclasses']
     if add_classes:
         html = add_classes_to_html(html)
-    authorize_write()
+    check_for_write_authorization()
     write_to_html(path, html)
 
 if __name__ == '__main__':
