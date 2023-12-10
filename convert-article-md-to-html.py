@@ -34,14 +34,27 @@ def convert_md_to_html(path):
         html = markdown.markdown(text)
     return html
 
+def clean_up_html(html):
+    lines = html.split('\n')
+    html_cleaned_up = lines[0]
+    for line in lines[1:]:
+        if line[:4] in ['<h1>', '<h2>', '<h3>', '<h4>', '<h5>', '<h6>']:
+            line = '\n' + line
+        elif line == '<p><br></p>':
+            line = '<br>'
+        elif line[:4] == '<li>':
+            line = '\t' + line
+        elif line[:12] == '<p><img src=' and line[-4:] == '</p>':
+            line = line[3:-4]
+        html_cleaned_up += '\n' + line
+    return html_cleaned_up
+
 def add_classes_to_html(html):
     lines = html.split('\n')
     line_0_with_class = lines[0][:3] + ' class="short-margin-bottom"' + lines[0][3:]
     line_1_with_class = lines[1][:2] + ' class="subtle"' + lines[1][2:]
     html_with_classes = line_0_with_class + '\n' + line_1_with_class
     for line in lines[2:]:
-        if line == '<p><br></p>':
-            line = '<br>'
         html_with_classes += '\n' + line
     return html_with_classes
 
@@ -64,6 +77,7 @@ def main():
     check_if_argument_is_a_directory(path)
     md_path = get_md_path(path)
     html = convert_md_to_html(md_path)
+    html = clean_up_html(html)
     add_classes = arguments['addclasses']
     if add_classes:
         html = add_classes_to_html(html)
