@@ -8,11 +8,11 @@ The dates next to the links below are roughly when I completed (or shelved) the 
 
 ## Projects
 
-- [Website](https://github.com/chrisphu/chrisphu.github.io) <span class="label code"></span> <span class="label external-link">GitHub</span> &ndash; Ongoing
-- [Basic filename linter](https://github.com/chrisphu/basic-filename-linter) <span class="label code"></span> <span class="label external-link">GitHub</span> &ndash; November 2023
-- [Modern chess pieces](https://www.printables.com/model/276528-modern-chess-pieces) <span class="label design"></span> <span class="label external-link">Printables</span> &ndash; January 2021
+- [Website](https://github.com/chrisphu/chrisphu.github.io) <span class="label code"></span> <span class="label external-link">GitHub</span> – Ongoing
+- [Basic filename linter](https://github.com/chrisphu/basic-filename-linter) <span class="label code"></span> <span class="label external-link">GitHub</span> – November 2023
+- [Modern chess pieces](https://www.printables.com/model/276528-modern-chess-pieces) <span class="label design"></span> <span class="label external-link">Printables</span> – January 2021
 
 ## Fun
 
-- [Puzzmo](/pages/stuff/puzzmo) &ndash; Ongoing
-- [20th Century Food Court completed!](/pages/stuff/20th-century-food-court-completed) <span class="label spoiler"></span> &ndash; October 2023
+- [Puzzmo](/pages/stuff/puzzmo) – Ongoing
+- [20th Century Food Court completed!](/pages/stuff/20th-century-food-court-completed) <span class="label spoiler"></span> – October 2023

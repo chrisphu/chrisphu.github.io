@@ -40,12 +40,18 @@ def clean_up_html(html):
     for line in lines[1:]:
         if line[:4] in ['<h1>', '<h2>', '<h3>', '<h4>', '<h5>', '<h6>']:
             line = '\n' + line
-        elif line == '<p><br></p>':
-            line = '<br>'
         elif line[:4] == '<li>':
             line = '\t' + line
+        elif line == '<p><br></p>':
+            line = '<br>'
         elif line[:12] == '<p><img src=' and line[-4:] == '</p>':
             line = line[3:-4]
+        # if '<code>' in line:
+        #     element_index = line.index('<code>')
+        #     line = line[:element_index] + '<pre>' + line[element_index:]
+        # if '</code>' in line:
+        #     element_index = line.index('</code>')
+        #     line = line[:(element_index + 7)] + '</pre>' + line[(element_index + 7):]
         html_cleaned_up += '\n' + line
     return html_cleaned_up
 
